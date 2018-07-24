@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Datagrid, TextField } from 'react-admin';
+import { List, Datagrid, TextField, EditButton } from 'react-admin';
 
 const PostList = props => (
   <List title="Recent Listings" {...props}>
@@ -7,6 +7,7 @@ const PostList = props => (
       <TextField source="title" />
       <TextField source="summary" />
       <TextField source="url" />
+      <EditButton />
     </Datagrid>
   </List>
 );
